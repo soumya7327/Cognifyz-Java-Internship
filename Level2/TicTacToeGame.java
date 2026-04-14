@@ -18,7 +18,7 @@ public class TicTacToeGame {
         boolean playAgain = true;
 
         while (playAgain) {
-            // Reset board
+        
             board = new char[]{'1','2','3','4','5','6','7','8','9'};
             currentPlayer = 1;
             boolean gameOver = false;
@@ -32,28 +32,27 @@ public class TicTacToeGame {
                 System.out.print(currentName + " (" + currentSymbol + ") enter position (1-9): ");
                 int position = scanner.nextInt();
 
-                // Validate position
+               
                 if (position < 1 || position > 9 || board[position-1] == 'X' || board[position-1] == 'O') {
                     System.out.println("❌ Invalid position! Try again.");
                     continue;
                 }
 
-                // Mark position
+                
                 board[position-1] = currentSymbol;
 
-                // Check win
+            
                 if (checkWin()) {
                     displayBoard();
                     System.out.println("🎉 " + currentName + " wins!");
                     gameOver = true;
                 }
-                // Check draw
                 else if (checkDraw()) {
                     displayBoard();
                     System.out.println("🤝 It's a draw!");
                     gameOver = true;
                 }
-                // Switch player
+               
                 else {
                     currentPlayer = (currentPlayer == 1) ? 2 : 1;
                 }
@@ -69,7 +68,6 @@ public class TicTacToeGame {
         scanner.close();
     }
 
-    // Display board
     static void displayBoard() {
         System.out.println("\n " + board[0] + " | " + board[1] + " | " + board[2]);
         System.out.println("---|---|---");
@@ -95,7 +93,7 @@ public class TicTacToeGame {
         return false;
     }
 
-    // Check draw
+   
     static boolean checkDraw() {
         for (char c : board) {
             if (c != 'X' && c != 'O') return false;
