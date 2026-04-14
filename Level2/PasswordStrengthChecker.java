@@ -3,40 +3,73 @@ package Level2;
 import java.util.Scanner;
 
 public class PasswordStrengthChecker {
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter a password to check its strength: ");
+
+        System.out.println("=== Password Strength Checker ===");
+        System.out.print("Enter a password: ");
         String password = scanner.nextLine();
-        
-        String strength = checkPasswordStrength(password);
-        System.out.println("Password strength: " + strength);
-        
-        scanner.close();
-    }
 
-    public static String checkPasswordStrength(String password) {
-        int length = password.length();
-        boolean hasUpper = false;
-        boolean hasLower = false;
-        boolean hasDigit = false;
-        boolean hasSpecial = false;
+        int score = 0;
+        String feedback = "";
 
-        for (char c : password.toCharArray()) {
-            if (Character.isUpperCase(c)) hasUpper = true;
-            else if (Character.isLowerCase(c)) hasLower = true;
-            else if (Character.isDigit(c)) hasDigit = true;
-            else if (!Character.isWhitespace(c)) hasSpecial = true;
-        }
-
-        if (length < 8) {
-            return "Weak (too short)";
-        } else if (!hasUpper || !hasLower || !hasDigit) {
-            return "Medium (missing uppercase, lowercase, or digit)";
-        } else if (!hasSpecial) {
-            return "Strong (but consider adding special characters)";
+        // Check length
+        if (password.length() >= 8) {
+            score++;
         } else {
-            return "Very Strong";
+            feedback += "❌ Password should be at least 8 characters\n";
         }
+
+        // Check uppercase
+        if (password.matches(".*[A-Z].*")) {
+            score++;
+        } else {
+            feedback += "❌ Add uppercase letters (A-Z)\n";
+        }
+
+        // Check lowercase
+        if (password.matches(".*[a-z].*")) {
+            score++;
+        } else {
+            feedback += "❌ Add lowercase letters (a-z)\n";
+        }
+
+        // Check numbers
+        if (password.matches(".*[0-9].*")) {
+            score++;
+        } else {
+            feedback += "❌ Add numbers (0-9)\n";
+        }
+
+        // Check special characters
+        if (password.matches(".*[@#$%^&*!].*")) {
+            score++;
+        } else {
+            feedback += "❌ Add special characters (@#$%^&*!)\n";
+        }
+
+        // Show result
+        System.out.println("\n--- Result ---");
+        if (score == 5) {
+            System.out.println("Strength: Very Strong 💪");
+        } else if (score == 4) {
+            System.out.println("Strength: Strong ✅");
+        } else if (score == 3) {
+            System.out.println("Strength: Medium ⚠️");
+        } else if (score == 2) {
+            System.out.println("Strength: Weak ❌");
+        } else {
+            System.out.println("Strength: Very Weak 🚨");
+        }
+
+        System.out.println("Score: " + score + "/5");
+        System.out.println("\nFeedback:");
+        if (feedback.isEmpty()) {
+            System.out.println("✅ Perfect password!");
+        } else {
+            System.out.println(feedback);
+        }
+
+        scanner.close();
     }
 }
