@@ -3,7 +3,7 @@
 Java Development Internship tasks completed at Cognifyz Technologies.
 
 ## 👤 Intern Details
-- **Name:** Soumya
+- **Name:** Soumyaranjan Jena
 - **Domain:** Java Development
 - **Company:** Cognifyz Technologies
 
@@ -15,14 +15,14 @@ Java Development Internship tasks completed at Cognifyz Technologies.
 | Temperature Converter | ✅ Completed |
 | Palindrome Checker | ✅ Completed |
 | Student Grade Calculator | ✅ Completed |
-| Random Password Generator | ⏳ In Progress |
+| Random Password Generator | ✅ Completed |
 
 ### 🔄 Level 2
 | Task | Status |
 |------|--------|
-| Tic-Tac-Toe Game | ⏳ Pending |
-| Password Strength Checker | ⏳ Pending |
-| File Encryption/Decryption | ⏳ Pending |
+| Tic-Tac-Toe Game |✅ Completed |
+| Password Strength Checker | ✅ Completed |
+| File Encryption/Decryption | ✅ Completed|
 
 ## 🛠️ Technologies Used
 - Java
@@ -35,3 +35,4 @@ specializing in data science, AI, ML and data analytics.
 
 ## 📬 Connect With Me
 - GitHub: github.com/soumya7327
+- LinkedIn: www.linkedin.com/in/soumyaranjan-jena-16b930321
