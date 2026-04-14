@@ -14,7 +14,7 @@ public class FileEncryptionDecryption {
         int choice = scanner.nextInt();
         scanner.nextLine();
 
-        System.out.print("Enter input file name: ");
+        System.out.print("Enter input file name  (with .txt): ");
         String inputFile = scanner.nextLine();
 
         System.out.print("Enter output file name: ");
