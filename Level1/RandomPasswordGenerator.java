@@ -1,5 +1,4 @@
-
-    import java.util.Random;
+import java.util.Random;
 import java.util.Scanner;
 
 public class RandomPasswordGenerator {
@@ -44,4 +43,3 @@ public class RandomPasswordGenerator {
         scanner.close();
     }
 }
-
