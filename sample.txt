@@ -1,0 +1,4 @@
+Hello World!
+This is a sample text file for testing the FileEncryptionDecryption program.
+It contains uppercase and lowercase letters, numbers 123, and special characters !@#.
+Let's see how the Caesar cipher handles it.
