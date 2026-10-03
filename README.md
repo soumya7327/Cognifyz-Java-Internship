@@ -1,50 +1,94 @@
-# 🚀 Cognifyz Java Internship
+# Cognifyz Java Internship
 
-This repository contains all the tasks and projects completed during my Java Development Internship at Cognifyz Technologies.
+A collection of Java console applications completed during my Java Development Internship at Cognifyz Technologies.
 
----
+## 📌 Internship Tasks
 
-## 👤 Intern Details
+### Level 1
+| Task | Description |
+|---|---|
+| Temperature Converter | Convert temperatures between Celsius and Fahrenheit |
+| Palindrome Checker | Check whether a word or phrase is a palindrome |
+| Student Grade Calculator | Calculate total, average, and letter grade |
+| Random Password Generator | Generate passwords using configurable character sets |
 
-* **Name:** Soumyaranjan Jena
-* **Domain:** Java Development
-* **Company:** Cognifyz Technologies
+### Level 2
+| Task | Description |
+|---|---|
+| Tic-Tac-Toe Game | Two-player console game with win/draw detection and replay |
+| Password Strength Checker | Evaluate password characteristics and provide feedback |
+| File Encryption/Decryption | Encrypt and decrypt text files using a Caesar cipher |
 
----
+## 🛠️ Tech Stack
 
-## 📋 Task Progress
+- Java
+- Java Standard Library
+- Object-oriented programming fundamentals
+- File I/O
+- Regular expressions
+- Git & GitHub
 
-### ✅ Level 1 
+## 📂 Project Structure
 
-- 🔹 Task 1: Temperature Converter  
-- 🔹 Task 2: Palindrome Checker  
-- 🔹 Task 3: Student Grade Calculator  
-- 🔹 Task 4: Random Password Generator  
----
+```text
+Cognifyz-Java-Internship/
+├── Level1/
+│   ├── PalindromeChecker.java
+│   ├── RandomPasswordGenerator.java
+│   ├── StudentGradeCalculator.java
+│   └── TemperatureConverter.java
+├── Level2/
+│   ├── FileEncryptionDecryption.java
+│   ├── PasswordStrengthChecker.java
+│   └── TicTacToeGame.java
+├── .gitignore
+└── README.md
+```
 
-## 🔄 Level 2 
+## ▶️ How to Run
 
-- 🔹 Task 1: Tic-Tac-Toe Game  
-- 🔹 Task 2: Password Strength Checker  
-- 🔹 Task 3: File Encryption/Decryption  
----
+Make sure Java is installed and available on your PATH.
 
-## 🛠️ Technologies Used
+### Level 1 example
 
-* Java
-* VS Code
-* Git & GitHub
+```bash
+javac Level1/TemperatureConverter.java
+java -cp Level1 TemperatureConverter
+```
 
----
+### Level 2 example
 
-## 🏢 About Cognifyz Technologies
+Because the Level 2 classes use the `Level2` package:
 
-Cognifyz Technologies is a technology company specializing in data science, artificial intelligence, machine learning, and data analytics.
+```bash
+javac Level2/PasswordStrengthChecker.java
+java Level2.PasswordStrengthChecker
+```
 
----
+For `FileEncryptionDecryption`, place the input text file in the directory from which you run the program, or provide an appropriate path when prompted.
 
-## 📬 Connect With Me
+## 🎯 Skills Demonstrated
 
-* 🔗 GitHub: https://github.com/soumya7327
-* 🔗 LinkedIn: https://www.linkedin.com/in/soumyaranjan-jena-16b930321
+These tasks practice core Java concepts including:
 
+- Console input/output with `Scanner`
+- Conditional statements and loops
+- String processing and `StringBuilder`
+- Random value generation
+- Regular expressions
+- File reading and writing
+- Basic error handling
+- Arrays and game-state management
+
+## 👤 Author
+
+**Soumyaranjan Jena**
+
+Java Development Intern
+
+- GitHub: [soumya7327](https://github.com/soumya7327)
+- LinkedIn: [Soumyaranjan Jena](https://www.linkedin.com/in/soumyaranjan-jena-16b930321)
+
+## 📄 Internship
+
+This repository contains the tasks completed as part of my Java Development Internship at Cognifyz Technologies.
